@@ -26,10 +26,39 @@
         <p>This is where you’ll write a short bio about yourself. Who are you? What are your interests? What have you done so far in your journey?</p>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+        <div class="gallery">
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A brief description of Project 1.</p>
+                <button class="button" onclick="toggleDetails(1)">Show Details</button>
+                <div id="details-1" class="project-details">
+                    <p>Details...</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A brief description of Project 2.</p>
+                <button class="button" onclick="toggleDetails(2)">Show Details</button>
+                <div id="details-2" class="project-details">
+                    <p>Details..</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>A brief description of Project 3.</p>
+                <button class="button" onclick="toggleDetails(3)">Show Details</button>
+                <div id="details-3" class="project-details">
+                    <p>Details..</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -40,7 +69,8 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Berra Tekin</p>
     </footer>
+    <script src = "script.js" defer ></script>
 </body>
 </html>
