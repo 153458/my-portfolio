@@ -69,4 +69,35 @@ footer {
         margin: 10px;
     }
 }
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    display: none; 
+}
 
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}

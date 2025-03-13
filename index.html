@@ -23,7 +23,7 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>This is where you’ll write a short bio about yourself. Who are you? What are your interests? What have you done so far in your journey?</p>
+        <p>This is where you will write a short bio about yourself. Who are you? What are your interests? What have you done so far in your journey?</p>
     </section>
 
     <section id="projects">
@@ -64,7 +64,28 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
+        <form id="contact-form">
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span id="name-error" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="email-error" class="error-message"></span>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <span id="message-error" class="error-message"></span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <!-- Footer Section -->
