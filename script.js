@@ -69,4 +69,10 @@ document.addEventListener("DOMContentLoaded", function() {
             error.style.display = "none";
         });
     }
+    const projectButtons = document.querySelectorAll(".button");
+    projectButtons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            window.location.href = `project${index+1}.html`;
+        });
+    });
 });
