@@ -8,8 +8,8 @@ body {
 }
 
 header, footer {
-    background-color: #333;
-    color: white;
+    background-color: lightpink;
+    color: gray;
     text-align: center;
     padding: 20px;
 }
@@ -24,7 +24,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: lightslategray;
     text-decoration: none;
     font-weight: bold;
 }
