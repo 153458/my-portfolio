@@ -30,21 +30,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration:underline;
 }
 section {
     padding: 20px;
     margin: 20px;
-    background-color: white;
+    background-color: lightgoldenrodyellow;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #333;
+    color: #d54646;
 }
 footer {
-    background-color: #333;
+    background-color: #520e0e;
     color: white;
     text-align: center;
     padding: 10px;
