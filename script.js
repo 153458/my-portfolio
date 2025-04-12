@@ -75,4 +75,10 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = `project${index+1}.html`;
         });
     });
+
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
+
 });

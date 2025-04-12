@@ -6,6 +6,22 @@ body {
     background-color: #f4f4f4;
     line-height: 1.6;
 }
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode header,
+  .dark-mode footer {
+    background-color: #1e1e1e;
+  }
+  
 
 header, footer {
     background-color: lightpink;
