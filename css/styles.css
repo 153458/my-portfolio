@@ -20,7 +20,15 @@ body {
   body {
     animation: fadeIn 1s ease-out;
   }
-  
+  header {
+    position: sticky;
+    top: 0;
+    background-color: lightpink;
+    color: gray;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+}
 body {
     background-color: #fff;
     color: #000;
