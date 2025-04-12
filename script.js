@@ -80,5 +80,22 @@ document.addEventListener("DOMContentLoaded", function() {
     themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 });
+const scrollBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
 
 });
