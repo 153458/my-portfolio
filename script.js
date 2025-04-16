@@ -60,8 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         if (isValid) {
-            form.submit(); 
+            const messageSent = document.getElementById("message-sent");
+            messageSent.textContent = "Message Sent";
+            messageSent.style.display = "block";
+
+            setTimeout(() => {
+                messageSent.style.display = "none";
+            }, 3000);
+
+            form.reset();
         }
+
     });
 
     function clearErrors() {
@@ -70,11 +79,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     const projectButtons = document.querySelectorAll(".button");
-    projectButtons.forEach((btn, index) => {
-        btn.addEventListener("click", () => {
-            window.location.href = `project${index+1}.html`;
-        });
+projectButtons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+        if (index < 2) { 
+            window.location.href = `project${index + 1}.html`;
+        } else {
+            alert('This project page does not exist.');
+        }
     });
+});
+
 
     const themeToggle = document.getElementById("theme-toggle");
     themeToggle.addEventListener("click", () => {
